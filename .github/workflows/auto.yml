@@ -3,7 +3,7 @@ name: Auto
 on:
   schedule:
     - cron: "0 2 * * *" # 北京时间上午10:00 (UTC+8)
-  workflow_dispatch:
+  workflow_dispatch:       # 加上这行，允许手动触发
 
 env:
   DIFY_TOKENS: ${{ secrets.DIFY_TOKENS }}
